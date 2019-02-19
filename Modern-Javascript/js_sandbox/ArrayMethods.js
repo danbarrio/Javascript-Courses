@@ -21,6 +21,49 @@ numbers[2] = 100;
 // Find index of value
 val = numbers.indexOf(36);
 
+// MUTATING ARRAYS --------------
+
+// Add on to end
+numbers.push(250);
+
+// Add on to front
+numbers.unshift(120);
+
+// Take off from end
+numbers.pop();
+
+// Take of from front
+numbers.shift();
+
+//Splice values
+numbers.splice(1,3);
+
+//Reverse 
+numbers.reverse();
+
+// Concatenate array
+val = numbers.concat(numbers2);
+
+// Sorting arrays
+val = fruit.sort();
+val = numbers.sort();
+
+// Use the compare function to sort numbers in descending order
+val = numbers.sort(function(x, y){
+  return y - x;
+});
+
+// Sort numbers in ascending order
+val = numbers.sort(function(x, y){
+  return x - y;
+});
+
+// Find
+function under50(num){
+  return num < 50;
+}
+
+val = numbers.find(under50);
 
 console.log(numbers);
 console.log(val);
